@@ -159,7 +159,7 @@
 		movingMap: false,
 		update: function() {
 			var hash = location.hash;
-			if (hash === this.lastHash) {
+			if (hash != this.lastHash) {
                 var options = this.parseHash(hash);
                 if (options) {
                     L.Util.extend(this._options, options);
